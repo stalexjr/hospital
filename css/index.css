@@ -1,0 +1,434 @@
+@charset "utf-8";
+
+main{
+    height: 280px;
+    background-image: url(../img/main-02.jpg);
+    background-size: cover;
+    background-position: 50% 80%;
+}
+main .wrap{
+    width: 1200px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+} 
+main .wrap h2{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: calc(100% / 12 * 5);
+    font-size: 48px;
+    color: #363636;
+    word-break: keep-all;
+}
+
+.link_btn{
+    padding: 20px 0;
+    background-color: #d3dce5;
+}
+.link_btn .wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+.link_btn .wrap ul{
+    font-size: 0;
+}
+.link_btn .wrap ul li{
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% / 12); /*80이던데 이러면 100아님??*/
+    padding: 0 10px; /*이러면 밀리던데 *** 아 마진쓰면 밀리니까 위에 width값에 -20 을 줘야되는구나*/
+}
+.link_btn .wrap ul li a{}
+.link_btn .wrap ul li a img{
+    width: 80px; /*직접줌*/
+}
+
+#cont_01{
+    background-color: #efedef;
+}
+#cont_01 .wrap{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    font-size: 0;
+    padding-top: 20px;
+}
+#cont_01 .wrap article{
+    width: calc(25% - 20px); /*이러면 280됨*/
+    height: 280px;
+    display: inline-block;
+    margin: 0 10px 20px;
+    vertical-align: top;
+    background-color: #004ea1;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 20px;
+}
+/* 짝수번째 상자의 색상을 지정 */
+#cont_01 .wrap article:nth-child(2n){
+    background-color: #03d365;
+}
+
+#cont_01 .wrap article .in_box{
+    width: 100%;
+    height: 100%;
+    position: relative; /*240 * 240*/
+}
+#cont_01 .wrap article .in_box h3{
+    font-size: 36px;
+    color: #fff;
+    line-height: 1;
+}
+#cont_01 .wrap article .in_box p{
+    font-size: 16px;
+    color: #fff;
+    padding-top: 30px;
+    word-break: keep-all;
+}
+#cont_01 .wrap article .in_box ul{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    left: 0;
+    border-top:2px solid #fff;
+    border-left: 2px solid #fff;
+}
+#cont_01 .wrap article .in_box ul li{
+    display: inline-block;
+    width: 50%;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+#cont_01 .wrap article .in_box ul li a{
+    display: block;
+    line-height: 36px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+#cont_01 .wrap article .in_box ul li:hover a{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* 짝수번째 상자의 색상을 지정 */
+#cont_01 .wrap article:nth-child(3){
+    width: calc(50% - 20px);
+    background-image: url(../img/cont-001.jpg);
+}
+#cont_01 .wrap article:nth-child(4){
+    width: calc(50% - 20px);
+    background-color: #fff;
+}
+#cont_01 .wrap article .in_box .black{
+    color: #363636;
+}
+#cont_01 .wrap article .in_box .search_box{
+    position: absolute;
+    width: 360px;
+    height: 40px;
+    left: 0;
+    bottom: 0;
+}
+#cont_01 .wrap article .in_box .search_box input{
+    border: 2px solid #004ea1;
+    width: calc(100% - 120px);
+    height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+}
+#cont_01 .wrap article .in_box .search_box button{
+    width: 120px;
+    height: 40px;
+    background-color: #004ea1;
+    color: #fff;
+    border: none;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+#cont_01 .wrap article .in_box .prize_img{
+    display: inline-block;
+    vertical-align: top;
+    width: 240px;
+    height: 100%;
+    background-image: url(../img/prize.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+#cont_01 .wrap article .in_box .prize_txt{
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 260px);
+    margin-left: 20px;
+    height: 100%;
+    position: relative;
+}
+#cont_01 .wrap article .in_box .prize_txt h3{
+
+}
+#cont_01 .wrap article .in_box .prize_txt p{
+    word-break: keep-all;
+    letter-spacing: -1.5px;
+}
+#cont_01 .wrap article .in_box .prize_txt a{
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 40px;
+    width: 160px;
+    border: 2px solid #004ea1;
+    line-height: 36px;
+    background-color: #e5e5e5;
+    color: #004ea1;
+    font-size: 18px;
+    text-align: center;
+}
+#cont_01 .wrap article .in_box .prize_txt a:hover{
+    background-color: #c5c5c5;
+}
+
+
+#banner{
+    height: 464px;
+    background-image: url(../img/health-care.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#banner .wrap{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+#banner .wrap .banner_cont{
+    position: absolute;
+    width: 400px;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+#banner .wrap .banner_cont h2{
+    font-size: 36px;
+    color: #363636;
+    word-break: keep-all;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+#banner .wrap .banner_cont img{
+    width: 180px;
+}
+
+
+#cont_02{}
+#cont_02 .wrap{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+}
+#cont_02 .wrap .title{}
+#cont_02 .wrap .title h3{
+    font-size: 36px;
+    line-height: 60px;
+    color: #363636;
+}
+#cont_02 .wrap .title p{
+    font-size: 20px;
+    color: #363636;
+    padding: 20px 0;
+}
+#cont_02 .wrap .cont{
+    font-size: 0;
+}
+#cont_02 .wrap .cont .cont_box{
+    display: inline-block;
+    vertical-align: top;
+    width: calc(25% - 20px);
+    height: 376px;
+    margin: 0 10px 20px;
+    font-size: 16px;
+    padding: 20px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#cont_02 .wrap .cont .cont_box:nth-child(1){
+    background-image: url(../img/cont-002.jpg);
+}
+#cont_02 .wrap .cont .cont_box:nth-child(2){
+    background-image: url(../img/cont-003.jpg);
+}
+#cont_02 .wrap .cont .cont_box:nth-child(3){
+    background-image: url(../img/cont-004.jpg);
+}
+#cont_02 .wrap .cont .cont_box:nth-child(4){
+    background-image: url(../img/cont-005.jpg);
+}
+/* #cont_02 .wrap .cont .cont_box h4{
+    font-size: 24px;
+    padding-top: 40px;
+    line-height: 1;
+    padding-bottom: 18px;
+    color: #fff;
+}
+#cont_02 .wrap .cont .cont_box .bar{
+    width: 80px;
+    height: 4px;
+    background-color: #fff;
+    margin: 0 auto; 
+    display: inline-block;
+} */
+/* 일정공간 (width 존재하고 height 존재할 때) 가로방향으로 가운데 배치하는 방법 
+    #1. display:block; 인 경우, 본인에게 margin:0 auto를 선언한다.
+    
+    #2. display:inline-block; 인 경우, 부모 또는 그 이상의 조상에게 text-align:center를 부여한다.
+*/
+#cont_02 .wrap .cont .cont_box h4{
+    font-size: 24px;
+    padding-top: 40px;
+    line-height: 1;
+    padding-bottom: 22px;
+    color: #fff;
+    position: relative;
+}
+#cont_02 .wrap .cont .cont_box h4:after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+#cont_02 .wrap .cont .cont_box p{
+    font-size: 18px;
+    color: #fff;
+    padding: 20px 20px 25px;
+    line-height: 1.2;
+    word-break: keep-all;
+}
+#cont_02 .wrap .cont .cont_box:last-child p{
+    padding: 20px 0 25px;
+}
+#cont_02 .wrap .cont .cont_box ul{
+    width: 120px;
+    margin: 0 auto;
+    border: 2px solid #fff;
+    border-bottom: none;
+}
+#cont_02 .wrap .cont .cont_box ul li{}
+#cont_02 .wrap .cont .cont_box ul li a{
+    display: block;
+    line-height: 38px;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    transition: background-color 0.5s;
+}
+#cont_02 .wrap .cont .cont_box ul li:hover a{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+/* 내가 한거 */
+/* .info_bx{
+    padding: 20px 0;
+    height: auto;
+    background-color: #efedef;
+}
+.info_bx .wrap{
+    width: 1200px;
+    height: 580px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.info_bx .wrap .cont{
+    width: 280px;
+    height: 280px;
+    padding: 20px;
+    background-color: #004ea1;
+    position: relative;
+}
+.info_bx .wrap .cont .txt_bx{
+    
+}
+.info_bx .wrap .cont .txt_bx h2{
+    font-size: 36px;
+    color: #fff;
+    padding-bottom: 28px;
+}
+.info_bx .wrap .cont .txt_bx p{
+    word-break: keep-all;
+    font-size: 18px;
+    color: #fff;
+}
+.info_bx .wrap .cont .box{
+    position: absolute;
+    width: 240px;
+    height: 40px;
+    background-color: #ee7777;
+    bottom: 20px;
+    left: 20px;
+    border: 1px solid #fff;
+    line-height: 40px;
+}
+.info_bx .wrap .cont .box a{
+    color: #fff;
+}
+.info_bx .wrap .cont .box a:nth-child(1){
+    font-size: 16px;
+    padding: 10px 0;
+    border-right: 1px solid #fff;
+} */
+
+/* 내가한거 */
+/* main{
+    width: 100%;
+    height: auto;
+    background-image: url(../img/main-02.jpg);
+    background-position: 85% 85%;
+    background-size: cover;
+}
+main .wrap{
+    width: 1200px;
+    height: 280px;
+    padding: 0 10px;
+    margin: 0 auto;
+    position: relative;
+}
+main .wrap .txt_pt{
+    position: absolute;
+    top: 140px;
+    left: 710px;
+    width: calc(100% / 3);
+    height: calc(100% / 2);
+}
+main .wrap h2{
+    font-size: 48px;
+    color: #363636;
+    word-break: keep-all;
+} */
+
+
+/* #cont_part{
+    width: 100%;
+    height: auto;
+}
+#cont_part .wrap{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+#cont_part .wrap .img_pt{
+    padding: 20px 0 16px 0;
+}
+#cont_part .wrap .img_pt img{
+    width: 80px;
+    height: 76px;
+    border-bottom: 4px solid transparent;
+    margin: 0 10px;
+} */
